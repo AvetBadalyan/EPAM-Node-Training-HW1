@@ -22,8 +22,8 @@ Create a Node.js command-line tool that provides customizable greetings. The too
 - English (default)
 - Spanish
 - French
-- Armenian (Barev)
-- Russian (Privet)
+- Armenian
+- Russian
 
 ## Usage
 
@@ -31,50 +31,50 @@ You can run the CLI tool using the following commands:
 
 ```bash
 node index.js
-# Output: Hello, Guest
+# Output: Hello, Guest!
 
 node index.js --name Avet
-# Output: Hello, Avet
+# Output: Hello, Avet!
 
 node index.js --greeting "Greetings from Node.js"
-# Output: Greetings from Node.js, Guest
+# Output: Greetings from Node.js, Guest!
 
 node index.js --level 2
 # Output: Hello, Guest (Date and Time: YYYY-MM-DD HH:MM:SS)
 
-node index.js --language Spanish
-# Output: Hola! Hello, Guest!
+node index.js --language Armenian
+# Output: Barev! Hello, Guest!
 
-node index.js --name Alice --greeting "Greetings from Node.js"
-# Output: Greetings from Node.js, Alice
+node index.js --name Avet --greeting "Greetings from Node.js"
+# Output: Greetings from Node.js, Avet!
 
 node index.js --greeting "Greetings from Node.js" --level 2
-# Output: Greetings from Node.js, Guest (Date and Time: YYYY-MM-DD HH:MM:SS)
+# Output: Greetings from Node.js, Guest! (Date and Time: YYYY-MM-DD HH:MM:SS)
 
-node index.js --greeting "Greetings from Node.js" --language Spanish
-# Output: Hola! Greetings from Node.js, Guest
+node index.js --greeting "Greetings from Node.js" --language Armenian
+# Output: Barev! Greetings from Node.js, Guest!
 
 node index.js --name Alice --greeting "Greetings from Node.js" --level 2
 # Output: Greetings from Node.js, Alice (Date and Time: YYYY-MM-DD HH:MM:SS)
 
 node index.js --name Alice --greeting "Greetings from Node.js" --language Spanish
-# Output: Hola! Greetings from Node.js, Alice
+# Output: Hola! Greetings from Node.js, Alice!
 
-node index.js --greeting "Greetings from Node.js" --level 2 --language Spanish
-# Output: Hola! Greetings from Node.js, Guest (Date and Time: YYYY-MM-DD HH:MM:SS)
+node index.js --greeting "Greetings from Node.js" --level 2 --language Armenian
+# Output: Barev! Greetings from Node.js, Guest! (Date and Time: YYYY-MM-DD HH:MM:SS)
 
-node index.js --name Alice --greeting "Greetings from Node.js" --level 2 --language Spanish
-# Output: Hola! Greetings from Node.js, Alice (Date and Time: YYYY-MM-DD HH:MM:SS)
+node index.js --name Alice --greeting "Greetings from Node.js" --level 2 --language French
+# Output: Bonjour! Greetings from Node.js, Alice (Date and Time: YYYY-MM-DD HH:MM:SS)
 
-node index.js --name Alice --level 2 --language Spanish
-# Output: Hola! Hello, Alice (Date and Time: YYYY-MM-DD HH:MM:SS)
+node index.js --name Alice --level 2 --language Russian
+# Output: Privet! Hello, Alice (Date and Time: YYYY-MM-DD HH:MM:SS)
 
 node index.js --name Alice --level 2
-# Output: Hello, Alice (Date and Time: YYYY-MM-DD HH:MM:SS)
+# Output: Hello, Alice! (Date and Time: YYYY-MM-DD HH:MM:SS)
 
-node index.js --greeting "Greetings from Node.js" --language Spanish
-# Output: Hola! Greetings from Node.js, Guest
+node index.js --greeting "Greetings from Node.js" --language Armenian
+# Output: Barev! Greetings from Node.js, Guest
 
-node index.js --name Alice --language Spanish
-# Output: Hola! Hello, Alice
+node index.js --name Alice --language Armenian
+# Output: Barev! Hello, Alice
 ```
